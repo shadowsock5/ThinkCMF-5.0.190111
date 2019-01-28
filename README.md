@@ -1,7 +1,7 @@
 # ThinkCMF-5.0.190111 backend arbitrary code injection
 
 ## Description
-`filterExp(&$value)` in `simplewind/thinkphp/library/think/Request.php` failed to filter single quote(i.e. ') in user input, resulting in arbitrary php code injected in `data/conf/route.php`. This vulnerability can be triggered by backend logged in user making a crafted HTTP request to **/portal/admin_category/addpost.html**
+ThinkCMF 5.0.190111 failed to filter single quote(i.e. ') in user input, resulting in arbitrary php code injected in `data/conf/route.php`. This vulnerability can be triggered by backend logged in user making a crafted HTTP request to **/portal/admin_category/addpost.html**
 
 
 ![](img/20190128153711.png)
